@@ -1,0 +1,212 @@
+/* Reset code and common starts here */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+
+:root{
+    --primary-color: rgb(11,181,48);
+    --secondary-color: rgba(36,122,55,0.9);
+    --padding: 0.5rem;
+    --transition: all 0.3s;
+    --border-radius: 0.6rem;
+    --box-shadow: 0.1rem .2rem, 0.8rem rgba(205,202,202,0.5)
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 50%;
+    height: auto;  
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+.background-color {
+    background-color: rgb(242, 232, 219);
+}
+.cart {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    padding: var(--padding);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.cart:hover {
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(205, 202, 202, 1);
+}
+.text-center{
+    text-align: center;
+}
+/* Reset code and common ends here */
+
+/* page-main-container starts here  */
+.page-main-container {
+    position: relative;
+    min-height: 100vh;
+  }
+/* page-main-container starts here  */
+
+/* all other page content starts here  */
+.all-other-page-content {
+    padding-bottom: 10rem;
+}
+/* all other page content ends here  */
+
+/* Header starts here */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 0rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.header .gov-logo {
+    width: 5rem;
+    height: 5rem;
+}
+.header .three-logo {
+    width: 37rem;
+    height: 5rem;
+}
+/* Header ends here */
+
+/* Login starts here  */
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 60vh;
+}
+.section-title {
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+.login .login-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+    padding-bottom: 0.8rem;
+}
+.form {
+    flex: 0.90;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-control label {
+    flex: 0.15;
+    text-align: left;
+}
+.form-control input {
+    flex: 0.75;
+    padding: var(--padding);
+    border: 1px solid;
+}
+.submit-btn {
+    width: 25%;
+    border-radius: 8px;
+}
+.login .cart {
+    width: 35rem;
+}
+.form a {
+    text-align: right;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+}
+.form a:hover {
+    color: red;
+}
+/* Login ends here  */
+
+/* main ends here  */
+
+/* Footer style starts here */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    width: 100%;
+    min-height: 10vh;
+    padding: var(--padding);
+    background-color:hsla(120,100%,75%,0.3);
+    font-size: 1.1rem;
+    bottom: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    gap: 0.5rem;
+}
+/* .footer-inner {
+    flex-direction: column;
+
+} */
+.btn-subscribe{
+    margin-left: -5px;
+
+}
+.footer-input {
+    border: none;
+    padding: var(--padding);
+    width: 20rem;
+}
+/* Footer style ends here */
+
+/* responsiveness start here */
+
+@media (max-width: 750px) {
+    .login .cart {
+        width: 90%;
+    }
+    .footer {
+        min-height: 90%;
+        font-size: 0.8rem;
+    }
+    .header .gov-logo {
+        width: 50%;
+        height: 50%;
+    }
+    .header .three-logo {
+        width: 90%;
+        height: 90%;
+    }
+}
+@media(max-width: 712px) {
+    
+}
+
+/* responsiveness ends here */
